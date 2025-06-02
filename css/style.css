@@ -1,0 +1,137 @@
+/* top_btn */
+.top_btn_container {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* main_section */
+.main_section {
+    background: url(../img/main_section.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+header > p {
+    background-color: #be201f;
+    text-align: center;
+    padding: 14px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.header_bottom,
+.header_menu,
+.header_icon {
+    display: flex;
+}
+
+.header_bottom {
+    justify-content: space-between;
+    padding: 32px 80px;
+    align-items: center;
+}
+
+.header_menu, 
+.logo,
+.header_icon {
+    width: 500px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.header_icon {
+    justify-content: flex-end;
+}
+
+.header_bottom > ul {
+    gap: 24px;
+}
+
+.header_menu > li {
+    font-size: 20px;
+    color: #be201f;
+    font-weight: 600;
+}
+
+.header_icon > li > svg > path {
+    fill: #be201f;
+}
+
+.header_menu > li::after {
+    content: "";
+    display: block;
+    background-color: #be201f;
+    width: 0;
+    height: 2px;
+    margin-top: 16px;
+}
+
+.header_menu > li:hover li::after {
+    width: 100%;
+}
+
+.main_text {
+    margin: 60px 80px;
+}
+
+.main_text > h2 {
+    font-size: 50px;
+    color: #fff;
+    line-height: 75px;
+    font-weight: 600;
+}
+
+.main_text > p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 24px;
+}
+
+/* shack_list_section */
+.shack_list_section {
+    padding: 80px;
+}
+.shack_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shack_list > li {
+    color: #be201f;
+}
+
+.shack_list > li > img {
+    width: 437px;
+    height: 535px;
+}
+
+.shack_name {
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.shack_price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 600;
+}
+
+.real_price {
+    text-decoration: line-through;
+    color: #e0a8a8;
+}
+
+.shack_discount {
+    border: 1px solid #be201f;
+    border-radius: 24px;
+    padding: 8px;
+    display: inline-block;
+    margin-top: 16px;
+}
