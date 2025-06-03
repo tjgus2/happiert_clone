@@ -15,6 +15,18 @@
     background-repeat: no-repeat;
 }
 
+header {
+    height: 200px;
+    position: fixed;
+    top: 20px;
+    width: 100%;
+}
+
+header.hide {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
 header > p {
     background-color: #be201f;
     text-align: center;
@@ -134,4 +146,190 @@ header > p {
     padding: 8px;
     display: inline-block;
     margin-top: 16px;
+}
+
+/* research_section */
+.research_section {
+    overflow: hidden;
+}
+
+.text_ani_box {
+    width: max-content;
+    animation: roll 60s infinite linear;
+    margin-bottom: 100px;
+}
+
+.text_ani_box > p {
+    font-size: 170px;
+    color: #be201f;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    } 
+}
+
+.research_box {
+    margin: 0 80px;
+}
+
+.research_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.research_bottom {
+    margin-top: 34px;
+}
+
+
+.research_list_width {
+    width: 560px;
+    color: #be201f;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.research_list_width > h2 {
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.research_list_width > p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 250px;
+}
+
+.more_btn {
+    color: #be201f;
+    font-size: 20px;
+    border: 1px solid #be201f;
+    width: fit-content;
+    padding: 16px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.more_btn:hover {
+    color: #fff;
+    background-color: #be201f;
+}
+
+/* animation_zone */
+.animation_zone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 80px;
+}
+
+.animation_text {
+    font-size: 120px;
+    color: #be201f;
+    line-height: 170px;
+}
+
+.animation_text > span {
+    border: 3px solid #be201f;
+    padding: 0 60px 18px;
+    border-radius: 100px;
+}
+
+.animation_img {
+    animation: img_rotate 15s infinite linear;
+}
+
+@keyframes img_rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* diet_section */
+.diet_section {
+    background: url(../img/diet_section_img.png);
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.diet_section > h2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.diet_section > p {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.more_btn.white {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.more_btn.white:hover {
+    background-color: #fff;
+    color: #be201f;
+}
+
+/* footer */
+footer {
+    background-color: #be201f;
+    padding: 100px 80px;
+}
+
+.footer_content {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    margin-top: 80px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.footer_content > div > h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.info > p:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+.guide > ul > li {
+    width: 250px;
+    padding: 12px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.contact > div {
+    padding: 16px 0;
+}
+
+.plus_text {
+    font-size: 26px;
+    font-weight: 600;
 }
